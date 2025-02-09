@@ -4,20 +4,12 @@ body {
     align-items: center;
     height: 100vh; /* Mengatur tinggi viewport */
     background-color: #00e1ff; /* Warna latar belakang */
-}
 
-.button {
-    display: flex; /* Agar elemen a berfungsi seperti tombol */
-    padding: 10px 20px; /* Ruang di dalam tombol */
-    background-color: transparent; /* Menghilangkan warna latar belakang */
-    color: #000000; /* Warna teks hitam */
-    text-align: center; /* Teks di tengah */
-    text-decoration: none; /* Menghilangkan garis bawah */
-    border: #ffffff; /* Menghilangkan border */
-    border-radius: 0; /* Tidak ada sudut membulat */
-    font-size: 16px; /* Ukuran font */
-     background-position: center;   transition: transform 0.3s, color 0.3s; /* Efek transisi untuk transformasi dan warna teks */
-     gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
 }
 
 button {
@@ -30,7 +22,7 @@ button {
     justify-content: center;
   }
   
-  button img {
+button img {
     width: 30px;
     height: 10px;
   }
@@ -75,36 +67,14 @@ button {
     animation-delay: .10s;
 }
 
-h4 {
-    font-size: 20px;
-    font-weight: thin;
-    color: #ffffff;
-        position: absolute;
-        top: 500px;
-        left: center;
-  }
 
-h5 {
-    font-size: 13px;
-    font-weight: thin;
-    color: #ffffff;
-        position: absolute;
-        top: 525px;
-        left: center;
-  }
-  
 
+.footer-text {
+    text-align: center;
+    margin-bottom: 1px; /* Ruang sedikit dari bawah */
+}
   
-h6{
-    font-size: 13px;
-    font-weight: thin;
-    color: #ffffff;
-        position: absolute;
-        top: 530px;
-        left: center;
-  }
-  
-  .video-container {
+.video-container {
     position: absolute;
     width: 360px;
     height: 200px;
