@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Mengatur tinggi viewport */
+    background-color: #00e1ff; /* Warna latar belakang */
+}
+
+.button {
+    display: flex; /* Agar elemen a berfungsi seperti tombol */
+    padding: 10px 20px; /* Ruang di dalam tombol */
+    background-color: transparent; /* Menghilangkan warna latar belakang */
+    color: #000000; /* Warna teks hitam */
+    text-align: center; /* Teks di tengah */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border: #ffffff; /* Menghilangkan border */
+    border-radius: 0; /* Tidak ada sudut membulat */
+    font-size: 16px; /* Ukuran font */
+     background-position: center;   transition: transform 0.3s, color 0.3s; /* Efek transisi untuk transformasi dan warna teks */
+     gap: 10px;
+}
+
+button {
+    background-color: transparent;
+    
+    cursor: pointer;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button img {
+    width: 30px;
+    height: 10px;
+  }
+
+.textOPEN{
+    font-size: 30px;
+    font-weight: thin;
+    color: #00ffff;
+    -webkit-text-stroke: 0.5px black; /* Warna dan ketebalan garis tepi */
+        position: absolute;
+        top: 250px;
+        left: center;
+      
+}
+
+.textOPEN > span{
+    animation: glow 2.5s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: #00b7ff;
+        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
+    }
+    10%, 90%{
+        color: #141414;
+        text-shadow: none;
+    }
+}
+.textOPEN > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.textOPEN > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.textOPEN > span:nth-child(4){
+    animation-delay: .6s;
+}
+.textOPEN > span:nth-child(5){
+    animation-delay: .8s;
+}
+.textOPEN > span:nth-child(6){
+    animation-delay: .10s;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: thin;
+    color: #ffffff;
+        position: absolute;
+        top: 500px;
+        left: center;
+  }
+
+h5 {
+    font-size: 13px;
+    font-weight: thin;
+    color: #ffffff;
+        position: absolute;
+        top: 525px;
+        left: center;
+  }
+  
+
+  
+h6{
+    font-size: 13px;
+    font-weight: thin;
+    color: #ffffff;
+        position: absolute;
+        top: 530px;
+        left: center;
+  }
+  
+  .video-container {
+    position: absolute;
+    width: 360px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #000;
+    cursor: move;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+#close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color:transparent;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.resize-handle {
+    width: 15px;
+    height: 15px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: se-resize;
+    border-radius: 50%;
+}
